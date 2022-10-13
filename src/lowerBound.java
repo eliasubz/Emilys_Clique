@@ -27,6 +27,7 @@ import java.util.*;
                 graph[edges[i][0]-1][edges[i][1]-1] = 1;// graph [[0][0] = 1][[0][1] = 2]->[1][2] = 1 has to be 0 for first index in graph
                 graph[edges[i][1]-1][edges[i][0]-1] = 1;// graph[
                 //System.out.println(edges[i][0] + " " + edges[i][1]);
+
                 d[edges[i][0]-1]++; // adds 1 to d[0] because edges[i=0] points to {1,2}
                 d[edges[i][1]-1]++;// adds 1 to d[1]
                 //System.out.println(Arrays.toString(d));
